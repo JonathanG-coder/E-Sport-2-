@@ -1,0 +1,1099 @@
+{
+	"info": {
+		"_postman_id": "b5a39086-845e-4ec5-9050-d333a6734319",
+		"name": "com.esport.back",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36843148"
+	},
+	"item": [
+		{
+			"name": "style",
+			"item": [
+				{
+					"name": "Get all Style",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/style",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"style"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by Style id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/style/1",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"style",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Style",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name_style\": \"style1\"\r\n}"
+						},
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/style",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"style"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete by Style id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/style/1",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"style",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update by Style id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_style\": 1,\r\n    \"name_style\": \"style1\"\r\n}"
+						},
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/style/1",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"style",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "game",
+			"item": [
+				{
+					"name": "Get all Game",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/game",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"game"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by Game id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/game/1",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"game",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Game",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name_game\": \"game1\",\r\n    \"banner_game\": \"http://banner1.fr\",\r\n    \"img_game\": \"http://img1.fr\",\r\n    \"pegi_game\": 18,\r\n    \"year_game\": 2024,\r\n    \"styles\":\r\n    [\r\n        {\r\n            \"id_style\": 1,\r\n            \"name_style\": \"style1\"\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/game",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"game"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete by Game id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/game/1",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"game",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update by Game id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_game\": 1,\r\n    \"name_game\": \"game1\",\r\n    \"banner_game\": \"http://banner1.fr\",\r\n    \"img_game\": \"http://img1.fr\",\r\n    \"pegi_game\": 18,\r\n    \"year_game\": 2024,\r\n    \"styles\":\r\n    [\r\n        {\r\n            \"id_style\": 1,\r\n            \"name_style\": \"style1\"\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/game/1",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"game",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "member",
+			"item": [
+				{
+					"name": "Get all Member",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/member",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"member"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by Member id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/member/1",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"member",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Member",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstname_member\": \"firstname1\",\r\n    \"lastname_member\": \"lastname1\",\r\n    \"nickname_member\": \"nickname1\",\r\n    \"photo_member\": \"http://photo1.fr\",\r\n    \"country_member\": \"country1\"\r\n}"
+						},
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/member",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"member"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete by Member id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/member/1",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"member",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update by Member id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_member\": 1,\r\n    \"firstname_member\": \"firstname1\",\r\n    \"lastname_member\": \"lastname1\",\r\n    \"nickname_member\": \"nickname1\",\r\n    \"photo_member\": \"http://photo1.fr\",\r\n    \"country_member\": \"country1\"\r\n}"
+						},
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/member/1",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"member",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "role",
+			"item": [
+				{
+					"name": "Get all Role",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/role",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by Role id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/role/1",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"role",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Role",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"task_role\": \"task1\",\r\n    \"type_role\": 1\r\n}"
+						},
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/role",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete by Role id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/role/1",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"role",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update by Role id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_role\": 1,\r\n    \"task_role\": \"task1\",\r\n    \"type_role\": 1\r\n}"
+						},
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/role/1",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"role",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "member_has_role",
+			"item": [
+				{
+					"name": "Get all Member_has_role",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/member_has_role",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"member_has_role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by Member_has_role id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/member_has_role/1/1",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"member_has_role",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Member_has_role",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\r\n    {\r\n        \"id_member\": 1,\r\n        \"id_team\": 1\r\n    },\r\n    \"role\":\r\n    {\r\n        \"id_role\": 1\r\n    },\r\n    \"member\":\r\n    {\r\n        \"id_member\": 1,\r\n        \"firstname_member\": \"firstname1\",\r\n        \"lastname_member\": \"lastname1\",\r\n        \"nickname_member\": \"nickname1\",\r\n        \"photo_member\": \"http://photo1.fr\",\r\n        \"country_member\": \"country1\"\r\n    },\r\n    \"team\":\r\n    {\r\n        \"id_team\": 1,\r\n        \"name_team\": \"team1\",\r\n        \"maxplayers_team\": 8,\r\n        \"logo_team\": \"http://logo1.fr\",\r\n        \"game\":\r\n        {\r\n            \"id_game\": 1,\r\n            \"name_game\": \"game1\",\r\n            \"banner_game\": \"http://banner1.fr\",\r\n            \"img_game\": \"http://img1.fr\",\r\n            \"pegi_game\": 18,\r\n            \"year_game\": 2024,\r\n            \"styles\":\r\n                [{\r\n                    \"id_style\": 1,\r\n                    \"name_style\": \"style1\"\r\n                }]\r\n        }\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/member_has_role",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"member_has_role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete by Member_has_role id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/member_has_role/1/1",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"member_has_role",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update by Member_has_role id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\r\n    {\r\n        \"id_member\": 1,\r\n        \"id_team\": 1\r\n    },\r\n    \"role\":\r\n    {\r\n        \"id_role\": 1\r\n    },\r\n    \"member\":\r\n    {\r\n        \"id_member\": 1,\r\n        \"firstname_member\": \"firstname1\",\r\n        \"lastname_member\": \"lastname1\",\r\n        \"nickname_member\": \"nickname1\",\r\n        \"photo_member\": \"http://photo1.fr\",\r\n        \"country_member\": \"country1\"\r\n    },\r\n    \"team\":\r\n    {\r\n        \"id_team\": 1,\r\n        \"name_team\": \"team1\",\r\n        \"maxplayers_team\": 8,\r\n        \"logo_team\": \"http://logo1.fr\",\r\n        \"game\":\r\n        {\r\n            \"id_game\": 1,\r\n            \"name_game\": \"game1\",\r\n            \"banner_game\": \"http://banner1.fr\",\r\n            \"img_game\": \"http://img1.fr\",\r\n            \"pegi_game\": 18,\r\n            \"year_game\": 2024,\r\n            \"styles\":\r\n                [{\r\n                    \"id_style\": 1,\r\n                    \"name_style\": \"style1\"\r\n                }]\r\n        }\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/member_has_role/1/1",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"member_has_role",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "team",
+			"item": [
+				{
+					"name": "Get all Team",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/team",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"team"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by Team id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/team/1",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"team",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Team",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name_team\": \"team1\",\r\n    \"maxplayers_team\": 8,\r\n    \"logo_team\": \"http://logo1.fr\",\r\n    \"game\":\r\n        {\r\n            \"id_game\": 1,\r\n            \"name_game\": \"game1\",\r\n            \"banner_game\": \"http://banner1.fr\",\r\n            \"img_game\":\" http://img1.fr\",\r\n            \"pegi_game\": 18,\r\n            \"year_game\": 2024,\r\n            \"styles\":\r\n            [\r\n                {\r\n                    \"id_style\": 1,\r\n                    \"name_style\": \"style1\"\r\n                    }\r\n            ]\r\n        }\r\n}"
+						},
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/team",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"team"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete by Team id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/team/1",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"team",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update by Team id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Test si retour ok\", () => { pm.response.to.have.status(200); });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_team\": 1,\r\n    \"name_team\": \"team1\",\r\n    \"maxplayers_team\": 8,\r\n    \"logo_team\": \"http://logo1.fr\",\r\n    \"game\":\r\n        {\r\n            \"id_game\": 1,\r\n            \"name_game\": \"game1\",\r\n            \"banner_game\": \"http://banner1.fr\",\r\n            \"img_game\": \"http://img1.fr\",\r\n            \"pegi_game\": 18,\r\n            \"year_game\": 2024,\r\n            \"styles\":\r\n            [\r\n                {\r\n                    \"id_style\": 1,\r\n                    \"name_style\": \"style1\"\r\n                    }\r\n            ]\r\n        }\r\n}"
+						},
+						"url": {
+							"raw": "{{base_host}}:{{base_port}}/{{base_api}}/team/2",
+							"host": [
+								"{{base_host}}"
+							],
+							"port": "{{base_port}}",
+							"path": [
+								"{{base_api}}",
+								"team",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
